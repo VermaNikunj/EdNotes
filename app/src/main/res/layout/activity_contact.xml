@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".NavigationMenu.ContactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call: 1299 (Mon-Fri: 9am to 6pm)"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btCall"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="call"
+            android:background="@drawable/custom_button3"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#292929"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text=" ------------- OR ------------- "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#292929"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject: "
+            android:textSize="16sp"/>
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Large"/>-->
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailSubject|textCapWords"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message: "
+            android:textSize="16sp"/>
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Large"/>-->
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="8"
+            android:inputType="textMultiLine|textCapSentences"
+            android:gravity="start|top"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="send"
+        android:background="@drawable/custom_button1"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#292929"
+        android:textSize="16sp"/>
+
+</LinearLayout>

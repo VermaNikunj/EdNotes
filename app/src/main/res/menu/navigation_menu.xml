@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon ="@drawable/ic_dashboard_black_24dp"
+        android:title="Dashboard"
+        android:checked="true">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_school" android:icon="@drawable/school_icon"
+                    android:title="For School Students" />
+
+                <item android:id="@+id/nav_college" android:icon="@drawable/college_icon"
+                    android:title="For College Students" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/nav_upload" android:icon="@drawable/upload_icon"
+        android:title="Upload" />
+
+    <item android:id="@+id/nav_account" android:icon="@drawable/account_icon"
+        android:title="Account" />
+
+    <item android:id="@+id/nav_settings" android:icon="@drawable/setting_icon"
+        android:title="Settings" />
+
+    <item android:id="@+id/nav_about" android:icon="@drawable/about_us"
+        android:title="About Us" />
+
+    <item android:id="@+id/nav_contact" android:icon="@drawable/contact_icon"
+        android:title="Contact" />
+
+</menu>

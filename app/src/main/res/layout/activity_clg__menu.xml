@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16sp"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    android:paddingTop="16sp"
+    tools:context=".ClgStart.Clg_Menu">
+
+    <Spinner
+        android:id="@+id/SpCourse"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:background="@drawable/background_spinner"
+        android:spinnerMode="dialog" />
+
+    <Spinner
+        android:id="@+id/SpBranch"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180sp"
+        android:background="@drawable/background_spinner"
+        android:spinnerMode="dialog" />
+
+    <Spinner
+        android:id="@+id/SpSemester"
+        android:background="@drawable/background_spinner"
+        android:spinnerMode="dialog"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260sp" />
+
+
+    <Button
+        android:id="@+id/BtSubmit"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:textSize="20sp" />
+
+</RelativeLayout>

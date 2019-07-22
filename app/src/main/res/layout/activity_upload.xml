@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center"
+    tools:context=".NavigationMenu.UploadActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanks for helping other students also.\n\n For Uploading material,\nPlease follow below simple two steps"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:padding="6dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/black_overlay"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Step 1:- Enter Material Required Details\nAnd Click Continue\nStep 2:- Attach the file And Send"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course: "
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Uploadcourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:autofillHints="Issue/Feedback"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester: (Enter Number only)"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Uploadsemester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject: (Please Full name)"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Uploadsubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:background="@android:color/transparent"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter One File Type:"
+            android:textSize="14sp"/>
+
+        <RadioGroup
+            android:id="@+id/radiofiletype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="0dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radionotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:layout_marginEnd="4dp"/>
+            <RadioButton
+                android:id="@+id/radiotute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tute"
+                android:layout_marginEnd="4dp" />
+            <RadioButton
+                android:id="@+id/radioques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q/A"
+                android:layout_marginEnd="4dp"/>
+            <RadioButton
+                android:id="@+id/radiobook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                android:layout_marginEnd="4dp" />
+            <RadioButton
+                android:id="@+id/radioother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Note: (If any)"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Uploadnote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textImeMultiLine"
+            android:gravity="start"
+            android:textSize="14sp"
+            android:background="@android:color/transparent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_button2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Name :"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Uploadname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/UploadContinue"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Continue"
+        android:background="@drawable/custom_button1"
+        android:layout_marginTop="25dp"
+        android:textColor="#292929"
+        android:textSize="15sp"/>
+
+</LinearLayout>
+
+</ScrollView>
